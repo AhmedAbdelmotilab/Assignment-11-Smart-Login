@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <section>
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="inner w-75 pb-5">
+            <div class="title text-center pt-4 pb-4">
+              <h1>Smart Login System</h1>
+            </div>
+            <div class="form d-flex justify-content-center align-items-center">
+              <div class="col-md-9 col-sm-12">
+                <div class="form-floating mb-4 form">
+                  <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" />
+                  <label for="userEmail">Email address</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control mb-4" id="userPassword" placeholder="Password" />
+                  <label for="userPassword">Password</label>
+                </div>
+                <p id="msgEmailNotFound" class="alert alert-danger p-2 lead w-100 mt-2 d-none">"This Email Not Correct"</p>
+                <p id="msgPasswordNotFound" class="alert alert-danger p-2 lead w-100 mt-2 d-none">"This Password Not Correct"</p>
+                <p id="msgNotFound" class="alert alert-danger p-2 lead w-100 mt-2 d-none">"This User Not Found"</p>
+                <p id="msgInputsRequired" class="alert alert-danger p-2 lead w-100 mt-2 d-none text-center">"All Inputs Are Required"</p>
+                <div class="button mt-3 mb-3">
+                  <button id="loginButton" class="w-100 p-2" type="submit">Login</button>
+                </div>
+                <div class="text-center p-3 text-white">
+                  <span> Don’t have an account? <a href="./pages/registration.html">Sign Up</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
